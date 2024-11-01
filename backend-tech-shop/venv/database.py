@@ -109,7 +109,7 @@ def create_tables(engine):
 
 def setup_database():
     # Database engine creation
-    engine = create_engine('mysql+mysqlconnector://root:As+s01galaxysa@localhost', echo=True)
+    engine = create_engine('mysql+mysqlconnector://root:password@localhost', echo=True)
     # Connect to MySQL server and create the database if it does not exist
     with engine.connect() as conn:
         conn.execute(text("CREATE DATABASE IF NOT EXISTS ecommerce_db"))
