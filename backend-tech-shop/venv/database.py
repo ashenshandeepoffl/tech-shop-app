@@ -114,7 +114,7 @@ def setup_database():
     with engine.connect() as conn:
         conn.execute(text("CREATE DATABASE IF NOT EXISTS ecommerce_db"))
     # Use the newly created database
-    engine = create_engine('mysql+mysqlconnector://root:As+s01galaxysa@localhost/ecommerce_db', echo=True)
+    engine = create_engine('mysql+mysqlconnector://root:password@localhost/ecommerce_db', echo=True)
     create_tables(engine)
 
 if __name__ == "__main__":
