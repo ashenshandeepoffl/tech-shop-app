@@ -1,6 +1,10 @@
+from database import setup_database
 from flask import Flask, jsonify
 
 app = Flask(__name__)
+
+# Setup the database
+setup_database()
 
 @app.route('/')
 def home():
