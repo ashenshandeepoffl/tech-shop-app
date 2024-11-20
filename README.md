@@ -26,6 +26,7 @@ tech-shop-app/
 └── backend/
 ├── venv/
 ├── app.py
+├── database.py
 ├── requirements.txt
 └── static/
 └── images/
